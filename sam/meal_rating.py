@@ -17,6 +17,6 @@ class Rating:
     service_id = Column(UUID(as_uuid=True),ForeignKey("tiffin_services.id"),nullable=False)
     date = Column(Date,nullable=False)
     meal_type = Column(Enum(MealType),nullable=False)
-    rating = Column(Ineger,default=0)
+    rating = Column(Integer,default=0)
     review = Column(String)
 
